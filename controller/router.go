@@ -4,6 +4,7 @@ import "github.com/gin-gonic/gin"
 
 func GetRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/", ShowAllBook)
+	r.GET("/", ShowAllBooks)
+	r.POST("/add", AddBook)
 	return r
 }
