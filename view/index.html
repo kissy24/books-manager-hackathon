@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reading Books</title>
+</head>
+
+<body>
+    <header>
+        <h1>Books</h1>
+    </header>
+    <div class="wrap">
+        <div class="input">
+            <p>{{.err}}</p>
+            <form action="/add" method="post">
+                <p>Title :<input type="text" name="title" size="30" placeholder="Title" /></p>
+                <p>ISBN :<input type="text" name="isbn" size="30" placeholder="ISBN" /></p>
+                <p>Publisher :<input type="text" name="publisher" size="30" placeholder="Publisher" /></p>
+                <p><input type="submit" value="Add Book" /></p>
+            </form>
+        </div>
+        <div class="indexGet">
+
+            <ul>
+                {{range.book}}
+                <h2>{{.Title}}</h2>
+                <li>{{.ISBN}}</li>
+                <li>{{.Publisher}}</li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
