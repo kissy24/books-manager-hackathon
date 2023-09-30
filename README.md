@@ -5,6 +5,8 @@
 
 System for managing books API.
 
+I created this for a hackathon at my company.
+
 ## API Reference
 
 - `/` : SELECT * from books
