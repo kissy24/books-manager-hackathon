@@ -1,4 +1,4 @@
-# go-reading-books
+# books-manager-hackathon
 
 ![](https://img.shields.io/github/go-mod/go-version/kissy24/go-reading-books)
 ![](https://img.shields.io/github/license/kissy24/go-reading-books)
